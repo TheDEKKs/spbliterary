@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Литературные места Санкт-Петербурга</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div>
+        <h1 class="titels">Литературные места Санкт-Петербурга</h1>
+         <div class="descriptionText">
+            <p>Это сайт - сборник литературных мест в Санкт-Петербурге. Создан для школьников учениками "7Б"</p>
+        </div>
+    </div>
+
+    <div class="Lib">
+        
+        <div class="LibMuse" onclick="performAction('Muse')">
+            <h2 class="textLibersM">МУЗЕИ</h2>
+            <h4 class="press-me">Нажми на меня</h4>
+        </div>
+        <div class="LibMuse" onclick="performAction('Monument')">
+            <h2 class="textLibersM">ПАМЯТНИКИ</h2>
+            <h4 class="press-me">Нажми на меня</h4>
+        </div>
+    </div>
+
+    <div class="MuseLibers" id="MuseLibers">
+        <h1 class="titels">Музеи</h1>
+        <div class="ItemsMuseLibers">
+            <div class="Items"> 
+                <h2>Дом Музей А.С. Пушкина</h2>
+                <img src="Pushkin.jpg" height="250" width="250">
+                <p><a style="color: rgba(0, 0, 0, 0.582); text-decoration: none;" href="https://yandex.ru/maps/-/CHFq7Rkj">Адрес: Санкт-Петербург, набережная реки Мойки, 12</a></p>
+                <div id="InformationsPushkin" onclick="performAction('InformationPushkin')"> 
+                    <p class="BtnInformation" onclick="performAction('InformationsPushkin')">Информация</p>
+                    <div id="WindowsInformationPushkin" class="WindowsInformationPushkin" >
+                        <div class="Win">
+                            <h1>Музей Пушкина</h1>
+                            <p>Информация</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="MonumentLibers" id="MonumentLibers">
+        <h1 class="titels">Памятники</h1>
+        <div class="ItemsMonumentLibers">
+            
+        </div>
+    </div>
+
+    <script>
+        function performAction(category) {
+            if ('Muse' ===  category){
+                const div = document.getElementById('MuseLibers');
+                if (div.style.display === "none" || div.style.display === "") {
+                    div.style.display = "block"; // Показываем div
+                } 
+                else {
+                    div.style.display = "none"; // Скрываем div
+                }
+                
+            }
+
+            if ('Monument' ===  category) {
+                const div = document.getElementById('MonumentLibers');
+                if (div.style.display === "none" || div.style.display === "") {
+                    div.style.display = "block"; // Показываем div
+                } 
+                else {
+                    div.style.display = "none"; // Скрываем div
+                }
+                
+            };
+            
+            if (category === 'InformationsPushkin') {
+                const div = document.getElementById('WindowsInformationPushkin');
+                if (div.style.display === "none" || div.style.display === "") {
+                    div.style.display = "block"; // Показываем div
+                } else {
+                    div.style.display = "none"; // Скрываем div
+                }
+            }
+        }
+    </script>
+</body>
+</html>

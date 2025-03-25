@@ -1,0 +1,95 @@
+body {
+    background-color: bisque;
+}
+
+h1.titels{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.descriptionText {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(231, 209, 180, 0.397);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+h2.textLibersM{
+    text-align: center;
+}
+
+.LibMuse {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(202, 183, 157, 0.842);
+    padding: 7px;
+    border-radius: 20px;
+}
+
+h4.press-me {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.301);
+}
+
+.MuseLibers {
+    background-color: rgba(172, 155, 133, 0.842);
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid rgb(5, 5, 5);
+    display: none; /* По умолчанию скрыт */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+.MonumentLibers {
+    background-color: rgba(172, 155, 133, 0.842);
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid rgb(5, 5, 5);
+    display: none; /* По умолчанию скрыт */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+p.BtnInformation {
+    margin-top: 25px;
+    background-color: rgb(128, 114, 97);padding: 15px; border-radius: 20px; font-size: 20px; text-decoration: none; color: black;
+}
+
+.WindowsInformationPushkin {
+    display: none;
+    
+    
+}
+
+.Win {
+    width: 70%;
+    background-color: rgba(126, 113, 95, 0.842);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+}
+
+.ItemsMuseLibers{
+    text-align: center;
+    display: flex; /* Добавляем flexbox */
+    flex-direction: column;
+    background-color: rgba(150, 135, 115, 0.842);
+    padding: 15px;
+    border-radius: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
