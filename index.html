@@ -13,7 +13,8 @@
     <div>
         <h1 class="titels">Литературные места Санкт-Петербурга</h1>
          <div class="descriptionText">
-            <p>Это сайт - сборник литературных мест в Санкт-Петербурге. Создан для школьников учениками "7Б". Что бы найти музей или памятник на карте нажмите на его адрес.</p>
+            <p>Это сайт-сборник литературных мест Санкт-Петербурга, созданный учениками класса "7Б" для школьников. Здесь вы сможете найти музеи или памятники, связанные с литературой. Вы сможете не только ознакомиться с адресами, но и узнать интересные факты о каждом месте. Чтобы увидеть объект на карте, просто нажмите на указанный адрес и отправьтесь в увлекательное путешествие по литературному городу!</p>
+            
         </div>
     </div>
 
@@ -21,10 +22,6 @@
         
         <div class="LibMuse" onclick="performAction('Muse')">
             <h2 class="textLibersM">МУЗЕИ</h2>
-            <h4 class="press-me">Нажми на меня</h4>
-        </div>
-        <div class="LibMuse" onclick="performAction('Monument')">
-            <h2 class="textLibersM">ПАМЯТНИКИ</h2>
             <h4 class="press-me">Нажми на меня</h4>
         </div>
     </div>
@@ -133,6 +130,18 @@
             </div>
         </div>
     </div>
+
+
+    <div class="Lib">
+        
+        <div class="LibMuse" onclick="performAction('Monument')">
+            <h2 class="textLibersM">ПАМЯТНИКИ</h2>
+            <h4 class="press-me">Нажми на меня</h4>
+        </div>
+    </div>
+
+    
+
 
     <div class="MonumentLibers" id="MonumentLibers">
         <h1 class="titels">Памятники</h1>
@@ -492,15 +501,24 @@
         </div>
     </div>
 
+    <footer class="infsss">
+        <p>Информация взята из открытых источников.  Если Вы являетесь автором материалов или обладателем авторских прав на него, но Ваше авторство не было указано или Вы возражаете против его использования на нашем сайте - пожалуйста свяжитесь с нами. Материалы будут скорректированы или удалены в максимально короткие сроки.</p>  
+        <a href="mailto:kibed.it@yandex.ru" style="text-decoration: none; color: #050505;">kibed.it@yandex.ru</a>
+    </footer>
     <script>
+
+
         function performAction(category) {
             if ('Muse' ===  category){
                 const div = document.getElementById('MuseLibers');
                 if (div.style.display === "none" || div.style.display === "") {
                     div.style.display = "block"; // Показываем div
+                    infsss.style.display = 'block'; // Показываем элемент
+                    
                 } 
                 else {
                     div.style.display = "none"; // Скрываем div
+                    
                 }
                 
             }
@@ -509,9 +527,11 @@
                 const div = document.getElementById('MonumentLibers');
                 if (div.style.display === "none" || div.style.display === "") {
                     div.style.display = "block"; // Показываем div
+                    infsss.style.display = 'block';
                 } 
                 else {
                     div.style.display = "none"; // Скрываем div
+                   
                 }
                 
             };
@@ -729,6 +749,15 @@
                     div.style.display = "none"; // Скрываем div
                 }
             }
+            if (category === 'Inf') {
+                const div = document.getElementById('inf');
+                if (div.style.display === "none" || div.style.display === "") {
+                    div.style.display = "block"; // Показываем div
+                } else {
+                    div.style.display = "none"; // Скрываем div
+                }
+            }
+            
         }
     </script>
 </body>

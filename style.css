@@ -1,7 +1,12 @@
 @media (min-width:752px) {
 body {
     background-color: bisque;
+    opacity: 0;
+    
+    animation: ani 2.5s forwards;
 }
+
+
 
 h1.titels{
     text-align: center;
@@ -30,6 +35,7 @@ h2.textLibersM{
     background-color: rgba(202, 183, 157, 0.842);
     padding: 7px;
     border-radius: 20px;
+    
 }
 
 h4.press-me {
@@ -48,6 +54,8 @@ h4.press-me {
     margin-right: auto;
     border-radius: 50px;
     margin-top: 40px;
+    opacity: 0;
+    animation: ani 1.5s forwards;
 }
 
 .MonumentLibers {
@@ -61,6 +69,8 @@ h4.press-me {
     margin-right: auto;
     border-radius: 50px;
     margin-top: 40px;
+    opacity: 0;
+    animation: ani 1.5s forwards;
 }
 
 p.BtnInformation {
@@ -81,6 +91,8 @@ p.BtnInformation {
     margin-right: auto;
     border-radius: 10px 0px 10px 0px;
     padding: 5px;
+    opacity: 0;
+    animation: ani 0.5s forwards;
 }
 
 .ItemsMuseLibers{
@@ -105,6 +117,22 @@ p.BtnInformation {
     width: 350px;
     height: 250px;
 }
+
+.infsss {
+    text-align: center;
+    padding: 10px 10px;
+    opacity: 50%;
+    color: #050505;
+    position: relative;
+    bottom: 0;
+    margin-top: 200px;
+    
+    
+}
+
+
+
+
 
 }
 
@@ -219,4 +247,20 @@ p.BtnInformation {
         height: 150px;
     }
     
+    .infsss {
+        text-align: center;
+        padding: 10px 10px;
+        opacity: 50%;
+        color: #050505;
+        position: relative;
+        bottom: 0;
+        margin-top: 50px;
+        
+    }
 }
+
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
