@@ -146,6 +146,9 @@ p.BtnInformation {
 
     body {
         background-color: bisque;
+        opacity: 0;
+    
+        animation: ani 2.5s forwards;
     }
     
     h1.titels{
@@ -194,6 +197,9 @@ p.BtnInformation {
         margin-right: auto;
         border-radius: 50px;
         margin-top: 40px;
+        opacity: 0;
+    
+    animation: ani 2.5s forwards;
     }
     
     .MonumentLibers  {
@@ -207,6 +213,9 @@ p.BtnInformation {
         margin-right: auto;
         border-radius: 50px;
         margin-top: 40px;
+        opacity: 0;
+    
+        animation: ani 2.5s forwards;
     }
     
     p.BtnInformation {
@@ -227,6 +236,9 @@ p.BtnInformation {
         border-radius: 10px 0px 10px 0px;
         padding: 5px;
         font-size: 0.9rem;
+        opacity: 0;
+    
+        animation: ani 2.5s forwards;
     }
     
     .ItemsMuseLibers{
